@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>Elm Europe 2019<br />Retrospective</section>
+        <section>
+          <ul>
+            <li>I'm Théophile Kalumbu</li>
+            <li>Functional programming enthusiast</li>
+            <li>Attending Elm-Europe since 2017</li>
+          </ul>
+        </section>
+        <section>
+          Working at Veepee <br />
+          <img
+            src="./assets/vp-squad.jpg"
+            height="600"
+            style="max-width: inherit !important; max-height: inherit !important;"
+          />
+        </section>
+
+        <section>
+          <h1>What ? When ? Where ?</h1>
+        </section>
+        <section>
+          <ul>
+            <li>A conference dedicated to the Elm langugage & Ecosystem</li>
+            <li>Was held on June 27-28th 2019</li>
+            <li>At EFREI school in Paris ( Villejuif )</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Who ?</h1>
+        </section>
+
+        <section>
+          Big Names :
+          <br />
+          Richard Feldman, Joël Quenneville, Romans Potasovs (Aka
+          @Kalabibishkis) etc...
+        </section>
+
+        <section>
+          And also
+          <br />
+          Beginners, Students, Designer(s) etc...
+        </section>
+
+        <section>
+          <h1>Keynotes</h1>
+        </section>
+
+        <section>
+          What if elm's only feature was algebraic data types ?
+          <ul>
+            <li>One of the most powerful tool of the language</li>
+            <li>Make impossible state impossible</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
