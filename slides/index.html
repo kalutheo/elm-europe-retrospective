@@ -9,6 +9,9 @@
 
     <title>reveal.js</title>
 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/simple.css" />
@@ -26,35 +29,46 @@
         : "css/print/paper.css"
       document.getElementsByTagName("head")[0].appendChild(link)
     </script>
+
+    <style>
+      img {
+        margin: auto !important;
+      }
+    </style>
+
+
+
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Elm Europe 2019<br />Retrospective</section>
+        <section>
+          <span class="text-6xl block text-purple-500">Elm Europe 2019</span>
+          <span class="text-purple-700">Retrospective</span></section>
         <section>
           <ul>
-            <li>I'm Théophile Kalumbu</li>
-            <li>Functional programming enthusiast</li>
-            <li>Attending Elm-Europe since 2017</li>
+            <li>I'm <span class="text-purple-500">Théophile Kalumbu</span></li>
+            <li><span class="text-purple-500">Functional programming</span> enthusiast</li>
+            <li>Attending Elm-Europe since <span class="text-purple-500">2017</span></li>
           </ul>
         </section>
         <section>
-          Working at Veepee <br />
+          <span class="block mb-2">Working at Veepee</span>
           <img
             src="./assets/vp-squad.jpg"
-            height="600"
-            style="max-width: inherit !important; max-height: inherit !important;"
+            style="height:600px;"
           />
         </section>
+
 
         <section>
           <h1>What ? When ? Where ?</h1>
         </section>
         <section>
           <ul>
-            <li>A conference dedicated to Elm</li>
-            <li>Was held on June 27-28th 2019</li>
-            <li>At EFREI school in Paris ( Villejuif )</li>
+            <li>A conference dedicated to <span class="text-purple-500">Elm</span></li>
+            <li>Was held on <span class="text-purple-500">June 27-28th 2019</span></li>
+            <li>At <span class="text-purple-500">EFREI school</span> in Paris ( Villejuif )</li>
           </ul>
         </section>
         <section>
@@ -62,15 +76,23 @@
         </section>
 
         <section>
-          Some of the greatest community contributors :
+          Some of the <span class="">greatest community contributors</span> :
           <br />
-          Richard Feldman, Joël Quenneville, @Kalabibishkis etc...
+          <span class="text-purple-500">Richard Feldman, Joël Quenneville, @Kalabibishkis etc...</span>
         </section>
 
         <section>
           And also
           <br />
-          Beginners, Students, Designer(s) etc...
+          <span class="text-purple-500">Beginners, Student(s), Designer(s) etc...</span>
+        </section>
+
+
+        <section>
+            <img
+            src="./assets/speakers.png"
+          />
+            
         </section>
 
         <section>
@@ -79,35 +101,44 @@
 
         <section>
           <h3>Custom Types everywhere</h3>
-          <img src="./assets/feldman.jpg" height="400"/ >
+          <img src="./assets/feldman.jpg" style="height: 440px;"/ >
           <br /><strong>Richard Feldman</strong>
         </section>
 
         <section>
           <h3>
-            What if elm's only feature was algebraic data types ?
+            What if elm's only feature was <br/><span class="text-purple-500">algebraic data types</span> ?
           </h3>
         </section>
 
         <section>
           <ul>
             <li>One of the main language feature</li>
-            <li>A killer design tool</li>
-            <li>A recuring topic during the conference</li>
-            <li>Make impossible state impossible</li>
+            <li class="fragment fade-in">A killer design tool</li>
+            <li class="fragment fade-in">A recuring topic during the conference</li>
+            <li class="fragment fade-in">Make impossible state impossible</li>
           </ul>
         </section>
 
         <section>
           <h3>Elm as a Service</h3>
-          <img src="./assets/mario-rogic.jpg" height="400" />
+          <img src="./assets/mario-rogic.jpg" style="height: 400px;" />
           <br /><strong>Mario Rogic</strong>
         </section>
 
         <section>
+            <h3>
+                <span class="text-purple-500">Lamdera</span>, a new way of creating applications<br/> 
+            </h3>
+          </section>
+
+        <section>
           <ul>
-            <li>A dream is becoming true</li>
-            <li>Write Elm on the Backend and the Frontend</li>
+            <li>Which language ? backend ? frontend ? hosting ?</li>
+            <li class="fragment fade-in">Write Elm on the Backend and the Frontend</li>
+            <li class="fragment fade-in">Great for prototyping</li>
+            <li class="fragment fade-in">No more headache with hosting, deployment etc.. </li>
+            <li class="fragment fade-in"><span class="text-purple-500">https://github.com/Lamdera</span></li>
           </ul>
         </section>
 
@@ -124,17 +155,17 @@
         <section>
           <ul>
             <li>50K loc of Elm</li>
-            <li>7 frontend engineers</li>
-            <li>Elm bootcamps for beginners onboarding</li>
-            <li>Cultivates Engineers & pushes code quality</li>
+            <li class="fragment fade-in">7 frontend engineers</li>
+            <li class="fragment fade-in">Elm bootcamps for beginners onboarding</li>
+            <li class="fragment fade-in">Cultivates Engineers & pushes code quality</li>
           </ul>
         </section>
 
         <section>
           <h3 style="text-transform: inherit">
-            how adopting Elm modified our state
+              Elm side effects:<br/>how adopting Elm modified our state
           </h3>
-          <img src="./assets/diane.jpg" height="400" />
+          <img src="./assets/diane.jpg" style="height: 400px;" />
 
           <br /><strong>Diane Manière</strong>
         </section>
@@ -142,23 +173,24 @@
         <section>
           <ul>
             <li>Elm as a success story in a startup</li>
-            <li>100% Styled-elements / No More CSS</li>
-            <li>Functional Style on the Backend</li>
+            <li class="fragment fade-in">100% Styled-elements / No More CSS</li>
+            <li class="fragment fade-in">Functional Style on the Backend</li>
+            <li class="fragment fade-in"><span class="text-purple-500">https://www.mybrocante.fr/</span></li>
           </ul>
         </section>
 
         <section>
-          <h3 style="text-transform: inherit">Elm at Veepee</h3>
-          <img src="./assets/rad-ben.jpg" height="400" />
+          <h3 style="text-transform: inherit">From experiment to production:<br/>stories of Elm at Veepee</h3>
+          <img src="./assets/rad-ben.jpg" style="height: 400px" />
 
-          <br /><strong>Radwane Hassen<br />& Benoît Chiquet</strong>
+          <br /><strong>Radwane Hassen & Benoît Chiquet</strong>
         </section>
 
         <section>
           <ul>
             <li>Elm as a learning tool</li>
-            <li>Pair programming</li>
-            <li>Code generation between Haskell/Node & Elm</li>
+            <li class="fragment fade-in">Pair programming</li>
+            <li class="fragment fade-in">Code generation between Haskell/Node & Elm</li>
           </ul>
         </section>
 
@@ -167,8 +199,9 @@
         </section>
 
         <section>
-          <h3 style="text-transform: inherit">GameDev in Elm</h3>
-          <img src="./assets/queneville.jpeg" height="400" />
+          <h3 style="text-transform: inherit">Gamedev in elm<br/>From Zero to Game Jam
+            </h3>
+          <img src="./assets/queneville.jpeg" style="height: 400px;" />
 
           <br /><strong>Joel Quenneville</strong>
         </section>
@@ -176,9 +209,12 @@
         <section>
           <ul>
             <li>Join a Game Jam & build games together (itch.io)</li>
-            <li>Limit your ambitions & set a goal</li>
-            <li>It's Ok to hardcode, think MVP</li>
-            <li>When stuck draw to viziualize the problem</li>
+            <li class="fragment fade-in">Limit your ambitions & set a goal</li>
+            <li class="fragment fade-in">It's Ok to hardcode, think MVP</li>
+            <li class="fragment fade-in">When stuck draw to viziualize the problem</li>
+        
+            <li class="fragment fade-in"><span class="text-purple-500">https://itch.io/</span></li>
+
           </ul>
         </section>
 
