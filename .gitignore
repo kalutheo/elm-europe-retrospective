@@ -4,3 +4,5 @@ slides/.firebaserc
 slides/firebase.json
 
 slides/.firebase/hosting..cache
+
+slides/firebase-debug.log
